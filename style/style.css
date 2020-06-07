@@ -1,0 +1,118 @@
+/*test style sheet*/
+
+* {
+    font-family: "Segoe UI";
+}
+
+QWidget#MainWindow {
+    qproperty-background_color_: rgb(39, 40, 44);
+    qproperty-border_width_: 1px;
+    qproperty-border_color_: rgb(24, 131, 215);
+    qproperty-border_radius_: 0px;
+    qproperty-opacity_: 1.0;
+    qproperty-shadow_on_: 0;
+    qproperty-shadow_color_: gray;
+    qproperty-shadow_blur_: 10px;
+
+}
+
+QWidget#MainTitle {
+    qproperty-background_color_: rgb(255, 255, 255);
+    qproperty-opacity_: 0.08;
+    qproperty-left_top_border_radius_: 0px;
+    qproperty-right_top_border_radius_: 0px;
+}
+
+QWidget#Title_MaximizeButton {
+    qproperty-icon_list_: "res/maximized_normal.png,res/maximized_hover.png,res/maximized_press.png,res/maximized_disable.png";
+}
+
+QWidget#Title_MinimizeButton {
+    qproperty-icon_list_: "res/minimized_normal.png,res/minimized_hover.png,res/minimized_press.png,res/minimized_disable.png";
+}
+
+QWidget#MainTitle QPushButton {
+    min-width: 24px;
+    min-height: 24px;
+    max-width: 24px;
+    max-height: 24px;
+    border: none;
+}
+
+QPushButton#Title_CloseButton {
+    qproperty-icon_list_: "res/close_normal.png,res/close_hover.png,res/close_press.png,res/close_disable.png";
+
+}
+
+QLabel#Title_LogLabel {
+
+}
+
+QLabel#Title_TitleLabel {
+    color: rgba(220, 220, 220, 160);
+    font-size: 18px;
+}
+
+/**arabic stylesheet*/
+QPushButton#ArabicMainWindow_Btn {
+    min-height: 28px;
+    background: lightseagreen;
+    border: None;
+    padding: 1px 12px;
+    border-radius: 12px;
+    min-width: 60px;
+    font-size: 16px;
+}
+
+QPushButton#ArabicMainWindow_Btn:hover {
+    background: lightblue;
+}
+
+QPushButton#ArabicMainWindow_Btn:pressed {
+    background: lightsteelblue;
+}
+
+
+QWidget#MainWindow QLineEdit,
+QWidget#MainWindow QLineEdit:hover {
+    background-color: rgb(39, 40, 44);
+    min-height: 28px;
+    font-size: 16px;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 60);
+}
+
+QTableWidget#ArabicMainWindow_FilterView {
+    background-color: rgb(39, 40, 44);
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+QTableWidget#ArabicMainWindow_FilterView::item {
+    color: rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+QLabel#ArabicMainWindow_FilterTips {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 18px;
+    padding: 2px 5px;
+}
+
+QComboBox#ArabicMainWindow_ProductCombobox {
+    background: rgb(39, 40, 44);
+    min-width: 100px;
+    padding: 2px 5px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+}
+
+QComboBox#ArabicMainWindow_ProductCombobox QAbstractItemView {
+    min-height: 25px;
+    background: rgb(39, 40, 44);
+    color: rgba(255, 255, 255, 0.3);
+    outline: 0px;
+    font-size: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
